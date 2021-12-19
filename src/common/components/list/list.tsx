@@ -1,8 +1,8 @@
-import { timeout, usePockemons } from "../../api/pockemons";
+import { usePockemons } from "../../api/pockemons";
 
 export default function List() {
   const { data } = usePockemons();
-  // const data: any = {results: []};
+
   return (
     <>
       {data.results.map((item) => (

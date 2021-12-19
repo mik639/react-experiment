@@ -1,15 +1,16 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 React 18!
 
-This project has been created using **webpack-cli**, you can now run
+Example with SSR and Suspense.
 
+
+## Play with it
+Start Webpack with
 ```
-npm run build
+npm run watch
+```
+Then start the server
+```
+npm run start
 ```
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Open http://localhost:3000/
