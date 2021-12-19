@@ -3,7 +3,7 @@ import { Loader } from "./components/loader/loader";
 
 import "./app.css";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, StrictMode } from "react";
 
 const List = lazy(() => import("./components/list/list"));
 
@@ -13,13 +13,15 @@ type PropTypes = {
 
 export function App({ client }: PropTypes) {
   return (
-    <QueryClientProvider client={client}>
-      <div className="layout">
-        <Header />
-        <Suspense fallback={<Loader />}>
-          <List />
-        </Suspense>
-      </div>
-    </QueryClientProvider>
+    <StrictMode>
+      <QueryClientProvider client={client}>
+        <div className="layout">
+          <Header />
+          <Suspense fallback={<Loader />}>
+            <List />
+          </Suspense>
+        </div>
+      </QueryClientProvider>
+    </StrictMode>
   );
 }
