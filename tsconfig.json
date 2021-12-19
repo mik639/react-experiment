@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es6",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "client/*": ["src/client/*"]
+    }
+  },
+  "include": ["src/client/index.tsx"]
+}

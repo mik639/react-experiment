@@ -1,0 +1,53 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "start": "nodemon dist/server/main.js",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mik639/react-experiment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mik639/react-experiment/issues"
+  },
+  "homepage": "https://github.com/mik639/react-experiment#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "axios": "^0.24.0",
+    "express": "^4.17.2",
+    "react": "^18.0.0-rc.0-next-3b3daf557-20211210",
+    "react-dom": "^18.0.0-rc.0-next-3b3daf557-20211210",
+    "react-query": "^3.34.5",
+    "swr": "^1.1.2-beta.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@webpack-cli/generators": "^2.4.1",
+    "autoprefixer": "^10.4.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.4",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.5.1",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
